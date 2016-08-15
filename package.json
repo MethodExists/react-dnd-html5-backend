@@ -11,6 +11,7 @@
     "lint": "eslint .",
     "test": "mocha --compilers js:babel/register --recursive",
     "test:watch": "npm run test -- --watch",
+    "postinstall": "npm run build",
     "prepublish": "npm run lint && npm run clean && npm run test && npm run build"
   },
   "repository": {
